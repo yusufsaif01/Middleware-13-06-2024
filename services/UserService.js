@@ -342,7 +342,7 @@ class UserService extends BaseService {
 
       if (requestedData._category == "personal_details") {
         const axiosrcivedata = await axios.get(
-          `http://yftchain.local/registration/in/profile/:_category/${user.user_id}`
+          `https://test.yftchain.com/registration/in/profile/:_category/${user.user_id}`
         );
 
         return axiosrcivedata.data.data;
