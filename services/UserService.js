@@ -471,7 +471,7 @@ class UserService extends BaseService {
   async getPublicProfileDetails(user = {}) {
     try {
       const response = await axios.get(
-        `http://yftchain.local/registration/in/member/public/profile/${user.user_id}/${user.sent_by}`
+        `https://test.yftchain.com/registration/in/member/public/profile/${user.user_id}/${user.sent_by}`
       );
       if (!_.isEmpty(response)) {
         return Promise.resolve(response.data.data);
